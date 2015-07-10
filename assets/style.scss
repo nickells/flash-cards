@@ -10,7 +10,7 @@
 
 * {
   box-sizing: border-box;
-}
+} 
 
 .category-button {
   border: 1px solid black;
@@ -75,6 +75,10 @@
   &.incorrect {
     color: red;
   }
+}
+
+.addBorder{
+  border: 2px solid black;
 }
 
 #statistics {

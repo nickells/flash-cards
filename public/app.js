@@ -12,6 +12,8 @@ app.factory('FlashCardsFactory', function ($http){
             return $http.get('/cards', {
                 params: queryParams
             }).then(function (response) {
+                // $scope.showLoadingIcon=false;
+                // console.log($scope.showLoadingIcon)
                 return response.data;
             });
 
