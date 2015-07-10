@@ -49,3 +49,11 @@ app.controller('MainController', function ($scope,FlashCardsFactory,ScoreFactory
 
 });
 
+app.filter('cheat',function(){
+
+	return function(answer){
+		return answer.filter(function(s){
+			return s.correct;
+		})	
+	}
+})
